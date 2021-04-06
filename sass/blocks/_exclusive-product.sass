@@ -1,0 +1,45 @@
+.exclusive-product
+  padding: 120px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+  &__cards
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    max-width: 570px
+  &__card
+    position: relative
+    overflow: hidden
+    width: 270px
+    height: 270px
+    &:hover .exclusive-product__hover
+      left: 0
+      transition: 1s
+    &--big
+      width: 570px
+      height: 570px
+  &__hover
+    position: absolute
+    top: 155px
+    left: -396px
+    padding: 31px
+
+.hover
+  &__subtitle
+    @include subtitle
+    color: #1e88e5
+    margin-bottom: 18px
+  &__title
+    @include title-secondary
+    margin-bottom: 24px
+  &__text
+    width: 332px
+    height: 38px
+    font-size: 14px
+    font-weight: 300
+    font-style: normal
+    letter-spacing: normal
+    color: #6c6c6c
+    overflow: hidden
+    margin-bottom: 32px
