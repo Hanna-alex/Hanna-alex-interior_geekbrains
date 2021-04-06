@@ -1,0 +1,33 @@
+.trending-products
+  padding: 112px 0 120px 0
+  &__title-block
+    display: flex
+    justify-content: space-between
+    margin-bottom: 64px
+  &__title
+    @include title-secondary
+  &__content
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &__block
+    position: relative
+    width: 370px
+    height: 370px
+    margin-bottom: 30px
+    overflow: hidden
+    &:hover .trending-products__description
+      left: 0
+      transition: 1s
+  &__description
+    position: absolute
+    top: 0
+    bottom: 0
+    left: -370px
+    padding: 65px 35px 65px 35px
+    width: 370px
+    height: 370px
+    background-color: #ffffff
+    opacity: 0.9
+    border: 1px solid #9c9c9c
+    text-align: center

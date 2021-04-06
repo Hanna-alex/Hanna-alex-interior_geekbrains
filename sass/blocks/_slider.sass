@@ -1,0 +1,59 @@
+.slider
+  position: relative
+  padding-top: 373px
+  width: 100%
+  height: 800px
+  background: url(../img/slider_1.jpg) no-repeat center center
+
+  &__subtitle
+    @include subtitle
+    color: #43a047
+    margin-bottom: 22px
+  &__title
+    @include title-h1
+    margin-bottom: 34px
+  &__text
+    width: 464px
+    height: 38px
+    font-size: 14px
+    font-weight: 300
+    font-style: normal
+    letter-spacing: normal
+    text-align: left
+    color: #6c6c6c
+    overflow: hidden
+    margin-bottom: 32px
+  &__button
+    display: inline-block
+    background: url(../img/arrow.svg) no-repeat 173px 16px
+    border-radius: 22.5px
+    @include button
+    padding: 16px 30px 16px 31px
+    margin-bottom: 32px
+    &:hover
+      box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35)
+
+.button
+  &__icon
+    width: 9px
+    height: 13px
+
+.pagination
+  position: absolute
+  bottom: 15px
+  left: 50%
+  transform: translateX(-50%)
+  &__circle
+    margin: 5px
+    display: inline-block
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    background-color: #c7c7c7
+    &:hover
+      background-color: #212121
+    &--active
+      width: 40px
+      height: 40px
+      background-color: #212121
+      margin-bottom: 0

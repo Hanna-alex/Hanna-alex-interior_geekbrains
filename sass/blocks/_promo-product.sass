@@ -1,0 +1,43 @@
+.promo-product
+  display: flex
+  &__content
+    padding: 228px 0
+    padding-left: 50px
+    width: 683px
+    height: 683px
+    &--first
+      background: url(../img/promo-img1.jpg) no-repeat
+    &--second
+      background: url(../img/promo-img2.jpg) no-repeat
+  &__subtitle
+    @include subtitle
+    color: #1e88e5
+    margin-bottom: 12px
+  &__title
+    font-size: 35px
+    font-weight: 700
+    font-style: normal
+    line-height: 43px
+    letter-spacing: -1px
+    color: #212121
+    margin-bottom: 12px
+  &__text
+    width: 374px
+    height: 42px
+    font-size: 14px
+    font-weight: 300
+    font-stretch: normal
+    font-style: normal
+    line-height: 23px
+    letter-spacing: -0.1px
+    color: #6c6c6c
+    overflow: hidden
+    margin-bottom: 34px
+  &__button
+    display: inline-block
+    background: url(../img/arrow.svg) no-repeat 173px 14px
+    border-radius: 22.5px
+    padding: 14px 30px 16px 31px
+    @include button
+    &:hover
+      box-shadow: $button-hover
