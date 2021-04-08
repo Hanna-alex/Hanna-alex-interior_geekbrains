@@ -14,13 +14,13 @@ body {
 }
 
 .container {
-  max-width: 1366px;
+  width: 1366px;
   margin: 0 auto;
   position: relative;
 }
 
 .content-container {
-  max-width: 1170px;
+  max-width: 1171px;
   margin: 0 auto;
 }
 
@@ -407,7 +407,7 @@ body {
 }
 
 .trending-products {
-  padding: 112px 0 120px 0;
+  padding: 112px 0 87px 0;
 }
 
 .trending-products__title-block {
@@ -514,6 +514,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
   max-width: 570px;
 }
 
@@ -572,5 +573,221 @@ body {
   color: #6c6c6c;
   overflow: hidden;
   margin-bottom: 32px;
+}
+
+.mobile-app {
+  padding: 125px 0 120px 0;
+  width: 100%;
+  height: 516px;
+  background: url(../img/mobile-app_bg.jpg) no-repeat;
+}
+
+.mobile-app__subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 13px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  margin-bottom: 8px;
+}
+
+.mobile-app__title {
+  width: 432px;
+  font-size: 62px;
+  font-weight: 100;
+  font-style: normal;
+  line-height: 43px;
+  letter-spacing: -3.3px;
+  text-transform: uppercase;
+  color: #212121;
+  text-align: left;
+  line-height: 1.16;
+  margin-bottom: 10px;
+}
+
+.mobile-app__text {
+  max-width: 423px;
+  height: 21px;
+  font-size: 22px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.09;
+  letter-spacing: normal;
+  color: #6c6c6c;
+  margin-bottom: 34px;
+}
+
+.mobile-app__link {
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  margin-right: 7px;
+}
+
+.footer {
+  padding: 114px 0 30px 0;
+  background-color: #f7f7f7;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.57;
+  color: #212121;
+}
+
+.footer__lists {
+  display: flex;
+  margin-bottom: 43px;
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 1px;
+  color: #6c6c6c;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer__link:hover {
+  font-weight: bold;
+}
+
+.footer__contact {
+  margin-right: 80px;
+}
+
+.footer__useful-information {
+  margin-right: 82px;
+}
+
+.footer__text {
+  width: 368px;
+  margin-bottom: 24px;
+}
+
+.footer__form {
+  position: relative;
+}
+
+.footer__bottom {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  color: #6c6c6c;
+}
+
+.contact {
+  width: 221px;
+}
+
+.contact__item {
+  letter-spacing: -0.1px;
+  list-style-type: none;
+  margin-bottom: 22px;
+}
+
+.useful-information__list {
+  margin-top: -1px;
+  display: flex;
+  justify-content: space-between;
+  width: 418px;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1.86;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.useful-information__link {
+  text-decoration: none;
+  color: #212121;
+}
+
+.form {
+  width: 370px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.57;
+  color: #6c6c6c;
+}
+
+.form__input {
+  padding: 17px 53px 17px 19px;
+  width: 370px;
+  height: 48px;
+  border: solid 1px #d9dee1;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.form__input:hover {
+  border-color: #212121;
+}
+
+.form__input:focus {
+  background-color: #212121;
+  color: #fff;
+}
+
+.form__button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding: 16px 14px 15px 13px;
+  width: 49px;
+  height: 48px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  fill: #6c6c6c;
+}
+
+.form__button:hover {
+  fill: #43a047;
+}
+
+.form__icon {
+  width: 21px;
+  height: 17px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  width: 130px;
+  margin-left: 162px;
+  margin-right: auto;
+  display: flex;
+}
+
+.social-media__circle {
+  padding: 7px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-color: #6c6c6c;
+  border-radius: 50%;
+}
+
+.social-media__icon {
+  max-width: 13px;
+  min-width: 10px;
+  height: 14px;
+  fill: #fff;
 }
 /*# sourceMappingURL=style.css.map */
