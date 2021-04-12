@@ -1,0 +1,492 @@
+@media screen and ( max-width: 1200px )
+  .content-container
+    max-width: 960px
+  .slider
+    padding-top: 330px
+    height: 700px
+    &__text
+      width: 350px
+      height: 60px
+  .tab
+    &__block
+      width: 225px
+      height: 225px
+    &__description
+      width: 225px
+      height: 225px
+  .promo-product
+    &__content
+      padding-left: 40px
+    &__text
+      width: 245px
+      height: 70px
+  .trending-products
+    &__block
+      width: 310px
+      height: 310px
+    &__description
+      width: 310px
+      height: 310px
+  .exclusive-product
+    padding: 90px 0
+    &__cards
+      max-width: 460px
+    &__card
+      width: 220px
+      height: 220px
+      &--big
+        width: 460px
+        height: 460px
+    &__hover
+      position: absolute
+      top: 90px
+      left: -396px
+      width: 460px
+      padding: 21px 150px 21px 21px
+  .hover__text
+    height: 50px
+
+  .footer
+    padding-top: 90px
+    &__lists
+      justify-content: space-between
+    &__contact
+      margin-right: 0
+    &__useful-information
+      margin-right: 0
+    &__text
+      width: 340px
+    &__bottom
+      justify-content: space-between
+  .social-media
+    margin: 0
+  .useful-information__list
+    width: 340px
+  .form
+    width: 340px
+    &__input
+      width: 100%
+
+  .mobile-app
+    padding: 100px 0
+    height: 450px
+    background-size: cover
+
+@media screen and ( max-width: 991px )
+  .content-container
+    max-width: 730px
+  .header
+    position: fixed
+    padding-top: 0
+    background: #f0f0f0
+    &__wrapper
+      position: relative
+      align-items: center
+    &__navbar
+      display: none
+  .navbar-mobile
+    display: none
+    &--active
+      position: absolute
+      top: 0
+      right: 0
+      padding: 40px 35px 20px 10px
+      width: 310px
+      background-color: #f0f0f0
+      border-radius: 10px
+      z-index: 80
+    &__list
+      list-style-type: none
+    &__link
+      display: block
+      padding: 4px 13px 10px 13px
+      text-decoration: none
+      font-size: 14px
+      font-weight: 400
+      font-style: normal
+      line-height: 10px
+      letter-spacing: 1.2px
+      color: #8c8c8c
+      margin-bottom: 10px
+    &__search
+      width: 100%
+    &__input
+      border-bottom: 1px solid #8c8c8c
+
+  .menu-button
+    display: block
+    position: relative
+    width: 50px
+    height: 50px
+    background: none
+    outline: none
+    border: none
+    z-index: 100
+    &__line
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 20px
+      height: 2px
+      background-color: #212121
+      &::after
+        content: ""
+        display: block
+        position: absolute
+        width: 20px
+        height: 2px
+        background-color: #212121
+        transform: translateY(-5px)
+      &::before
+        content: ""
+        display: block
+        position: absolute
+        width: 20px
+        height: 2px
+        background-color: #212121
+        transform: translateY(5px)
+
+  .slider
+    padding-top: 120px
+    height: 525px
+    &__title
+      font-size: 52px
+    &__subtitle
+      font-size: 16px
+    &__text
+      width: 295px
+      height: 55px
+    &__icon
+      fill: #212121
+    &__button
+      font-size: 16px
+      line-height: 14px
+      letter-spacing: 2.4px
+      padding-left: 40px
+      padding-top: 15px
+
+  .pagination
+    &__circle
+      width: 15px
+      height: 15px
+      &:hover
+        background-color: #c7c7c7
+      &--active
+        width: 25px
+        height: 25px
+        &:hover
+          background-color: #212121
+
+  .tab
+    padding: 60px 0 40px 0
+    &__button
+      font-size: 16px
+      min-width: 190px
+    &__content
+      flex-wrap: wrap
+    &__block
+      margin-bottom: 20px
+      width: 235px
+      height: 380px
+      &:hover .tab__description
+        left: 10px
+    &__description
+      padding: 15px
+      right: -10px
+      left: 10px
+      height: 175px
+    &__img
+      width: 225px
+  .filters
+    height: 51px
+    &__link
+      font-size: 32px
+      &:hover
+        color: #6c6c6c
+      &--active
+        &:hover
+          color: #212121
+  .button
+    &__icon
+      fill: #212121
+
+  .promo-product
+    &__content
+      padding: 75px 30px
+      height: 384px
+    &__button
+      font-size: 16px
+      line-height: 14px
+      letter-spacing: 2.4px
+      padding-left: 40px
+    &__text
+      width: 40%
+
+  .trending-products
+    padding: 60px 0
+    &__block
+      width: 330px
+      height: 450px
+      &:hover .trending-products__description
+        left: 20px
+    &__img
+      width: 310px
+      height: 310px
+    &__description
+      padding: 15px
+      right: -20px
+      left: 20px
+      height: 175px
+
+  .hot-deals
+    &__slider
+      padding-top: 150px
+      height: 525px
+    &__title
+      font-size: 52px
+    &__subtitle
+      font-size: 16px
+
+  .exclusive-product
+    &__wrapper
+      flex-wrap: wrap
+    &__cards
+      max-width: 355px
+    &__card
+      width: 170px
+      height: 170px
+      &--big
+        width: 360px
+        height: 360px
+    &__hover
+      position: absolute
+      top: 55px
+      left: 0
+      padding: 31px 112px 31px 31px
+      width: 360px
+  .hover
+    &__title
+      font-size: 32px
+    &__subtitle
+      font-size: 16px
+
+  .mobile-app
+    &__title
+      font-size: 52px
+    &__subtitle
+      font-size: 16px
+    &__text
+      font-size: 18px
+      width: 100%
+
+  .footer
+    &__lists
+      flex-wrap: wrap
+    &__link
+      &:hover
+        font-weight: 300
+    &__bottom
+      height: 100px
+      font-size: 10px
+      align-items: flex-end
+      flex-wrap: wrap
+    &__social-media
+      width: 100%
+      order: -2
+      align-self: flex-start
+      justify-content: center
+  .contact
+    width: 224px
+  .useful-information
+    &__list
+      width: 380px
+    &__link
+      &:hover
+        color: #212121
+  .social-media
+    &__circle
+      margin: 0 5px
+
+@media screen and ( max-width: 767px )
+  .content-container
+    max-width: 90%
+
+  .slider
+    height: 450px
+    background: url(../img/slider_1_min.jpg) no-repeat center center
+    &__subtitle
+      font-size: 14px
+    &__title
+      width: 100%
+      font-size: 40px
+      margin-bottom: 20px
+
+  .tab
+    &__top
+      flex-wrap: wrap
+      margin-bottom: 30px
+    &__filters
+      width: 100%
+      margin-bottom: 20px
+    &__button
+      margin: 0 auto
+
+    &__content
+      justify-content: space-around
+    &__block
+      width: 288px
+      height: 415px
+    &__img
+      width: 278px
+    &__description
+      width: 278px
+  .filters
+    height: 48px
+    &__link
+      font-size: 30px
+
+  .promo-product
+    flex-wrap: wrap
+    &__content
+      width: 100%
+    &__text
+      width: 62%
+    &__content
+      padding: 50px 20px
+      height: 350px
+
+  .trending-products
+    &__title-block
+      flex-wrap: wrap
+      margin-bottom: 30px
+    &__content
+      justify-content: space-around
+    &__subtitle
+      font-size: 14px
+    &__title
+      width: 100%
+      font-size: 32px
+      margin-bottom: 20px
+
+  .hot-deals
+    &__slider
+      padding-top: 95px
+      height: 440px
+
+    &__title
+      font-size: 40px
+      margin-bottom: 20px
+    &__text
+      width: 270px
+      height: 75px
+      margin-bottom: 20px
+
+  .exclusive-product
+    padding: 60px 0
+    &__cards
+      max-width: 100%
+      justify-content: space-around
+    &__card
+      width: 320px
+      height: 320px
+      margin-bottom: 20px
+      &--big
+        width: 100%
+        height: 390px
+        margin-bottom: 30px
+
+  .mobile-app
+    padding: 100px 0
+    height: 355px
+    padding: 60px 0
+    &__subtitle
+      font-size: 14px
+    &__title
+      width: 235px
+      font-size: 36px
+      margin-bottom: 20px
+    &__text
+      font-size: 14px
+    &__link
+      width: 100px
+      height: 30px
+
+  .footer
+    padding: 60px 0 20px 0
+    &__text
+      width: 100%
+    &__bottom
+      font-size: 8px
+
+  .contact
+   // width: 100%
+
+  .useful-information
+    margin-bottom: 25px
+    &__list
+      width: 100%
+      flex-direction: column
+
+  .form
+    width: 100%
+
+@media screen and ( max-width: 480px) and ( min-width: 320px )
+  .promo-product
+    &__subtitle
+      font-size: 12px
+    &__title
+      font-size: 28px
+    &__text
+      font-size: 12px
+
+  .trending-products
+    &__title
+      font-size: 28px
+    &__block
+      width: 288px
+      height: 410px
+    &__img
+      width: 268px
+      height: 268px
+    &__description
+      width: 268px
+
+  .filters
+    height: 45px
+    &__link
+      font-size: 28px
+
+  .exclusive-product
+    &__card
+      width: 288px
+      height: 288px
+    &__hover
+      padding: 20px 76px 20px 10px
+      width: 288px
+      top: 20px
+  .hover
+    &__subtitle
+      font-size: 12px
+    &__title
+      font-size: 26px
+
+  .tab
+    &__button
+      font-weight: 400
+
+  .mobile-app
+    padding: 40px 0
+    height: 300px
+    &__subtitle
+      font-size: 12px
+    &__title
+      font-size: 30px
+      margin-bottom: 15px
+    &__text
+      width: 50%
+    &__store
+      display: flex
+      flex-direction: column
+    &__link
+      margin-bottom: 15px

@@ -22,7 +22,6 @@
                 <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
             </a>
-
             <div class="header__navbar navbar">
               <ul class="navbar__list">
                 <li class="navbar__item">
@@ -42,16 +41,52 @@
                 </li>
               </ul>
 
-              <div class="navbar__search search">
+              <form action="#" class="navbar__search search">
+                <input type="text" class="search__input" />
                 <button class="search__button">
                   <svg class="search__icon">
                     <use xlink:href="img/sprite.svg#search"></use>
                   </svg>
                 </button>
-              </div>
-              <!-- /.header__search search -->
+              </form>
             </div>
-            <!-- /.header__navbar navbar -->
+            <!-- /.header__navbar-mobile navbar-mobile -->
+            <button class="menu-button">
+              <span class="menu-button__line"></span>
+            </button>
+            <div class="header__navbar-mobile navbar-mobile">
+              <ul class="navbar-mobile__list">
+                <li class="navbar-mobile__item">
+                  <a
+                    href="#"
+                    class="navbar-mobile__link navbar-mobile__link--active"
+                    >HOME</a
+                  >
+                </li>
+                <li class="navbar-mobile__item">
+                  <a href="#" class="navbar-mobile__link"> PRODUCTS</a>
+                </li>
+                <li class="navbar-mobile__item">
+                  <a href="#" class="navbar-mobile__link">HISTORY</a>
+                </li>
+                <li class="navbar-mobile__item">
+                  <a href="#" class="navbar-mobile__link">SHOWROOM</a>
+                </li>
+                <li class="navbar-mobile__item">
+                  <a href="#" class="navbar-mobile__link">CONTACT</a>
+                </li>
+              </ul>
+
+              <form action="#" class="navbar-mobile__search search">
+                <input type="text" class="search__input navbar-mobile__input" />
+                <button class="search__button">
+                  <svg class="search__icon">
+                    <use xlink:href="img/sprite.svg#search"></use>
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <!-- /.header__navbar-mobile navbar-mobile -->
           </div>
           <!-- /.header__wrapper -->
         </div>
@@ -123,7 +158,9 @@
                 </p>
               </div>
               <!-- /.tab__description description -->
-              <img src="img/product-1.jpg" alt="product-1" class="tab__img" />
+              <div class="tab__img">
+                <img src="img/product-1.jpg" alt="product-1" />
+              </div>
             </div>
             <!-- /.tab__block block -->
             <div class="tab__block">
@@ -142,7 +179,9 @@
                 </p>
               </div>
               <!-- /.block__description -->
-              <img src="img/product-2.jpg" alt="product-1" class="tab__img" />
+              <div class="tab__img">
+                <img src="img/product-2.jpg" alt="product-1" />
+              </div>
             </div>
             <!-- /.tab__description description -->
 
@@ -162,7 +201,9 @@
                 </p>
               </div>
               <!-- /.tab__description description -->
-              <img src="img/product-3.jpg" alt="product-1" class="tab__img" />
+              <div class="tab__img">
+                <img src="img/product-3.jpg" alt="product-1" />
+              </div>
             </div>
             <!-- /.tab__block block -->
             <div class="tab__block">
@@ -181,7 +222,9 @@
                 </p>
               </div>
               <!-- /.tab__description description -->
-              <img src="img/product-4.jpg" alt="product-1" class="tab__img" />
+              <div class="tab__img">
+                <img src="img/product-4.jpg" alt="product-1" />
+              </div>
             </div>
             <!-- /.tab__block block -->
           </div>
@@ -254,7 +297,9 @@
                 </p>
               </div>
               <!-- /.trending-products__description -->
-              <img src="img/product-5.jpg" alt="product-1" class="tab__img" />
+              <div class="trending-products__img">
+                <img src="img/product-5.jpg" alt="product" />
+              </div>
             </div>
             <!-- /.trending-products__block -->
 
@@ -274,11 +319,9 @@
                 </p>
               </div>
               <!-- /.trending-products__description -->
-              <img
-                src="img/product-6.jpg"
-                alt="product"
-                class="trending-products__img"
-              />
+              <div class="trending-products__img">
+                <img src="img/product-6.jpg" alt="product" />
+              </div>
             </div>
             <!-- /.trending-products__block -->
             <div class="trending-products__block">
@@ -297,11 +340,9 @@
                 </p>
               </div>
               <!-- /.trending-products__description -->
-              <img
-                src="img/product-7.jpg"
-                alt="product-1"
-                class="trending-products__img"
-              />
+              <div class="trending-products__img">
+                <img src="img/product-7.jpg" alt="product" />
+              </div>
             </div>
             <!-- /.trending-products__block -->
 
@@ -321,11 +362,9 @@
                 </p>
               </div>
               <!-- /.block__description -->
-              <img
-                src="img/product-8.jpg"
-                alt="product-1"
-                class="trending-products__img"
-              />
+              <div class="trending-products__img">
+                <img src="img/product-8.jpg" alt="product" />
+              </div>
             </div>
             <!-- /.trending-products__block -->
 
@@ -345,11 +384,9 @@
                 </p>
               </div>
               <!-- /.trending-products__description__description -->
-              <img
-                src="img/product-9.jpg"
-                alt="product"
-                class="trending-products__img"
-              />
+              <div class="trending-products__img">
+                <img src="img/product-9.jpg" alt="product" />
+              </div>
             </div>
             <!-- /.trending-products__block -->
 
@@ -369,11 +406,9 @@
                 </p>
               </div>
               <!-- /.trending-products__description -->
-              <img
-                src="img/product-10.jpg"
-                alt="product"
-                class="trending-products__img"
-              />
+              <div class="trending-products__img">
+                <img src="img/product-10.jpg" alt="product" />
+              </div>
             </div>
             <!-- /.trending-products__block -->
           </div>
