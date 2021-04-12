@@ -1396,7 +1396,7 @@ img {
   }
 }
 
-@media screen and (max-width: 480px) and (min-width: 320px) {
+@media screen and (max-width: 480px) {
   .promo-product__subtitle {
     font-size: 12px;
   }
@@ -1464,6 +1464,12 @@ img {
   }
   .mobile-app__link {
     margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content-container {
+    min-width: 288px;
   }
 }
 /*# sourceMappingURL=style.css.map */
