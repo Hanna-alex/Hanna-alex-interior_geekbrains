@@ -84,17 +84,18 @@
       align-items: center
     &__navbar
       display: none
-  .navbar-mobile
-    display: none
-    &--active
+
+  .navbar-mobile    
+    &__active
+      display: block
       position: absolute
       top: 0
       right: 0
       padding: 40px 35px 20px 10px
-      width: 310px
+      width: 288px
       background-color: #f0f0f0
       border-radius: 10px
-      z-index: 80
+      z-index: 90
     &__list
       list-style-type: none
     &__link
@@ -138,6 +139,7 @@
         height: 2px
         background-color: #212121
         transform: translateY(-5px)
+        transition: 0.2s
       &::before
         content: ""
         display: block
@@ -146,6 +148,16 @@
         height: 2px
         background-color: #212121
         transform: translateY(5px)
+        transition: 0.2s
+
+  .menu-button__active .menu-button__line::before
+    transform: rotate(45deg)
+    
+  .menu-button__active .menu-button__line::after
+    transform: rotate(-45deg)
+
+  .menu-button__active .menu-button__line
+    background-color: transparent
 
   .slider
     padding-top: 120px
