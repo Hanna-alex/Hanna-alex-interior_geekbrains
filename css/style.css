@@ -228,7 +228,7 @@ img {
 .pagination {
   position: absolute;
   bottom: 15px;
-  left: 51.2%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -883,19 +883,6 @@ img {
   justify-content: space-between;
 }
 
-.contact-page__title {
-  font-size: 62px;
-  font-weight: 100;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.16;
-  letter-spacing: -2px;
-  text-align: left;
-  color: #212121;
-  text-transform: capitalize;
-  margin-left: 96px;
-}
-
 .contact-page__card-info {
   display: flex;
   flex-direction: column;
@@ -965,6 +952,72 @@ img {
   padding: 120px 0 42px 0;
   height: 360px;
   background-color: #f5f5f5;
+}
+
+.page-title {
+  font-size: 62px;
+  font-weight: 100;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.16;
+  letter-spacing: -2px;
+  text-align: left;
+  color: #212121;
+  text-transform: capitalize;
+  margin-left: 96px;
+}
+
+.products-page__filters {
+  display: flex;
+  position: relative;
+  padding: 68px 0 48px 0;
+  margin-bottom: 5px;
+}
+
+.products-page__filters::after {
+  position: absolute;
+  bottom: 48px;
+  content: "";
+  width: 300px;
+  height: 1px;
+  background-color: #6c6c6c;
+}
+
+.products-page__link {
+  display: block;
+  margin-right: 11px;
+  padding: 0 7px 12px 7px;
+  min-width: 75px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: #6c6c6c;
+}
+
+.products-page__link--active {
+  color: #212121;
+  border-bottom: 3px solid #212121;
+}
+
+.products-page__link:hover {
+  color: #212121;
+}
+
+.products-page__loop {
+  margin: 33px  547px 130px auto;
+  width: 50px;
+}
+
+.loop__icon {
+  width: 40px;
+  height: 40px;
+  transform: rotate(-85deg);
 }
 
 @media screen and (max-width: 1200px) {
@@ -1505,13 +1558,13 @@ img {
   .form {
     width: 100%;
   }
-  .contact-page__title {
-    font-size: 40px;
-    margin-left: 50px;
-  }
   .contact-page__card-info {
     width: 288px;
     height: 288px;
+  }
+  .page-title {
+    font-size: 40px;
+    margin-left: 50px;
   }
   .title-block-page {
     height: 250px;
