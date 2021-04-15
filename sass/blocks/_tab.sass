@@ -30,9 +30,9 @@
     overflow: hidden
     &:hover .tab__description
       left: 0
-      transition: 1s  
-  &__description   
-    position: absolute    
+      transition: 1s
+  &__description
+    position: absolute
     bottom: 0
     left: -270px
     padding: 62px 32px 60px 32px
@@ -44,11 +44,20 @@
     text-align: center
 
 .filters
-  height: 55px
+  position: relative
+  min-height: 57px
   padding-bottom: 3px
-  border-bottom: 1px solid #6c6c6c
+  //border-bottom: 1px solid #6c6c6c
+  &::after
+    position: absolute
+    left: 0
+    bottom: 1px
+    content: ""
+    width: 300px
+    height: 1px
+    background-color: #6c6c6c
   &__link
-    padding: 0 20px 8px 9px
+    padding: 0 23px 8px 8px
     text-decoration: none
     font-size: 36px
     font-weight: bold
