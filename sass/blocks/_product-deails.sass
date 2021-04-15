@@ -1,0 +1,121 @@
+.product-deails
+  padding-top: 119px
+  &__wrapper
+    display: flex
+    margin: 71px 0 130px 0
+  &__fiter
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 23px 0
+    background-color: #f4f4f4
+  &__link
+    margin: 0 10px
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 18px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: 1.8px
+    color: #6c6c6c
+    &:hover
+      color: #212121
+  &__picture
+    max-width: 570px
+    margin-right: 56px
+  &__img
+    width: 570px
+    height: 570px
+    margin-bottom: 11px
+  &__description
+    padding-top: 44px
+  &__title
+    font-size: 36px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: normal
+    letter-spacing: -1.1px
+    text-align: center
+    color: #212121
+    margin-bottom: 13px
+  &__subtitle
+    @include subtitle
+    text-align: center
+    color: #e53935
+    margin-bottom: 36px
+  &__price
+    margin-bottom: 33px
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+    padding: 20px
+    width: 510px
+    min-height: 71px
+    background-color: #f44336
+    border-radius: 35px
+    box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35)
+    margin-bottom: 49px
+    font-size: 22px
+    font-weight: bold
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.09
+    letter-spacing: 4.4px
+    text-align: center
+    color: #ffffff
+    text-transform: uppercase
+    text-decoration: none
+    fill: #f44336
+    &:hover
+      fill: #fff
+      transition: 1s
+  &__icon
+    width: 16px
+    height: 24px
+    margin-left: 27px
+  &__text
+    margin: 0 auto
+    max-width: 506px
+    max-height: 244px
+    overflow: hidden
+    font-family: Gotham
+    font-size: 16px
+    font-weight: 300
+    font-stretch: normal
+    font-style: normal
+    line-height: 1.5
+    letter-spacing: 0.4px
+    color: #212121
+  &__p
+    margin-bottom: 10px
+
+.picture-filter
+  display: flex
+  justify-content: center
+  &__img
+    margin: 0 10px
+    width: 70px
+    height: 70px
+    &--active
+      opacity: 0.3
+
+.price
+  text-align: center
+  &__tag
+    font-family: 'Gotham'
+    font-size: 36px
+    font-weight: 300
+    font-stretch: normal
+    font-style: normal
+    line-height: 0.67
+    letter-spacing: normal
+    text-align: center
+    color: #212121
+  &__sum
+    font-size: 72px
+    margin-left: 5px
