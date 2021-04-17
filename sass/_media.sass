@@ -2,12 +2,17 @@
   .content-container
     max-width: 960px
     margin: 0 auto
-  .slider
-    padding-top: 330px
+
+  .hero
+    &__slider
+      padding-top: 330px
+
+  .slader
     height: 700px
     &__text
       width: 350px
       height: 60px
+
   .tab
     &__block
       width: 225px
@@ -15,19 +20,23 @@
     &__description
       width: 225px
       height: 225px
+
   .promo-product
     &__content
       padding-left: 40px
     &__text
       width: 245px
       height: 70px
+
   .trending-products
+  .content
     &__block
       width: 310px
       height: 310px
     &__description
       width: 310px
       height: 310px
+
   .exclusive-product
     padding: 90px 0
     &__cards
@@ -177,8 +186,10 @@
   .menu-button__active .menu-button__line
     background-color: transparent
 
+  .hero
+    &__slider
+      padding-top: 120px
   .slider
-    padding-top: 120px
     height: 525px
     &__title
       font-size: 52px
@@ -186,15 +197,14 @@
       font-size: 16px
     &__text
       width: 295px
-      height: 55px
-    &__icon
-      fill: #212121
+      height: 65px
     &__button
       font-size: 16px
       line-height: 14px
       letter-spacing: 2.4px
       padding-left: 40px
       padding-top: 15px
+      fill: #212121
 
   .pagination
     &__circle
@@ -212,7 +222,8 @@
     padding: 60px 0 40px 0
     &__button
       font-size: 16px
-      min-width: 190px
+      //min-width: 190px
+      fill: #212121
     &__content
       flex-wrap: wrap
     &__block
@@ -229,7 +240,9 @@
     &__img
       width: 225px
   .filters
-    height: 51px
+    min-height: 52px
+    &::after
+      width: 220px
     &__link
       font-size: 32px
       &:hover
@@ -238,8 +251,7 @@
         &:hover
           color: #212121
   .button
-    &__icon
-      fill: #212121
+    fill: #212121
 
   .promo-product
     &__content
@@ -255,10 +267,11 @@
 
   .trending-products
     padding: 60px 0
+  .content
     &__block
       width: 330px
       height: 450px
-      &:hover .trending-products__description
+      &:hover .content__description
         left: 20px
     &__img
       width: 310px
@@ -362,7 +375,8 @@
     &__text
       max-height: 210px
     &__link
-      color: #6c6c6c
+      &:hover
+        color: #6c6c6c
 
   .price
     &__tag
@@ -370,13 +384,18 @@
     &__sum
       font-size: 64px
 
+  .products-page
+    &__link:not(.products-page__link--active)
+      &:hover
+        color: #6c6c6c
+
 @media screen and ( max-width: 767px )
   .content-container
     max-width: 90%
 
   .slider
     height: 450px
-    background: url(../img/slider_1_min.jpg) no-repeat center center
+
     &__subtitle
       font-size: 14px
     &__title
@@ -404,14 +423,14 @@
     &__description
       width: 278px
   .filters
-    height: 48px
+    min-height: 50px
     &__link
       font-size: 30px
 
   .promo-product
     flex-wrap: wrap
     &__content
-      width: 100%
+      flex-basis: 100%
     &__text
       width: 62%
     &__content
@@ -422,20 +441,19 @@
     &__title-block
       flex-wrap: wrap
       margin-bottom: 30px
-    &__content
-      justify-content: space-around
     &__subtitle
       font-size: 14px
     &__title
       width: 100%
       font-size: 32px
       margin-bottom: 20px
+  .content
+    justify-content: space-around
 
   .hot-deals
     &__slider
       padding-top: 95px
       height: 440px
-
     &__title
       font-size: 40px
       margin-bottom: 20px
@@ -494,6 +512,8 @@
     width: 100%
 
   .contact-page
+    &__content-wrapper
+      justify-content: space-around
     &__card-info
       width: 288px
       height: 288px
@@ -505,11 +525,21 @@
   .products-page
     &__loop
       margin: 15px auto 60px auto
+    &__filters
+      flex-direction: column
+      margin: 0
+      padding: 56px 0
+      &::after
+        width: 220px
+    &__link
+      padding: 10px 5px
+      &--active
+        border: none
 
   .product-deails
     padding-top: 70px
     &__fiter
-      flex-direction: column      
+      flex-direction: column
     &__link
       margin: 10px 20px 10px 30px
       font-size: 16px
@@ -540,6 +570,7 @@
   .trending-products
     &__title
       font-size: 28px
+  .content
     &__block
       width: 288px
       height: 410px
@@ -550,7 +581,7 @@
       width: 268px
 
   .filters
-    height: 45px
+    min-height: 46px
     &__link
       font-size: 28px
 
