@@ -1,20 +1,14 @@
 .tab
-  padding: 114px 0 120px 0
+  padding: 112px 0 120px 0
   &__top
     display: flex
     justify-content: space-between
-    align-items: center
     margin-bottom: 50px
   &__button
-    position: relative
-    display: flex
-    align-items: center
-    justify-content: center
-    padding-top: 10px
     @include button
-    letter-spacing: 2.6px
-    border-bottom: 3px solid transparent
-    &:hover .button__icon
+    min-width: 180px
+    padding: 0
+    &:hover
       fill: #212121
       transition: 1s
     &:active
@@ -70,17 +64,6 @@
     &--active
       color: #212121
       border-bottom: 3px solid #212121
-
-.button
-  &__icon
-
-    position: absolute
-    top: 50%
-    transform: translateY(-20%)
-    right: -2px
-    width: 13px
-    height: 12px
-    fill: #fff
 
 .description
   &__button

@@ -1,5 +1,6 @@
 
-  let menuButton = document.querySelector('.menu-button');
+ $(document).ready(function (){  
+ let menuButton = document.querySelector('.menu-button');
   let menu = document.querySelector('.navbar-mobile');
 
   menuButton.addEventListener('click', function(){
@@ -9,3 +10,4 @@
 });
 
 
+});

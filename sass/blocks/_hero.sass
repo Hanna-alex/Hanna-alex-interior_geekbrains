@@ -1,6 +1,8 @@
+.hero
+  &__slider
+    padding-top: 373px
 .slider
   position: relative
-  padding-top: 373px
   width: 100%
   height: 800px
   background: url(../img/slider_1.jpg) no-repeat left center
@@ -24,25 +26,19 @@
     overflow: hidden
     margin-bottom: 26px
   &__button
-    position: relative
-    display: inline-block
-    border-radius: 22.5px
     @include button
     width: 212px
-    padding: 16px 30px 16px 31px
     margin-bottom: 32px
-    box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35)
-    &:hover .slider__icon
+    box-shadow: $button-shadow
+    &:hover
       fill: #212121
       transition: 1s
     &:active
       box-shadow: none
+
+.button
   &__icon
-    fill: #fff
-    position: absolute
-    right: 30px
-    width: 12px
-    height: 13px
+    @include icon-right-arrow
 
 .pagination
   position: absolute

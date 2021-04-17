@@ -44,7 +44,7 @@ img {
   left: 0;
   right: 0;
   z-index: 100;
-  padding-top: 63px;
+  padding: 63px 0 10px 0;
   width: 100%;
 }
 
@@ -150,9 +150,12 @@ img {
   display: none;
 }
 
+.hero__slider {
+  padding-top: 373px;
+}
+
 .slider {
   position: relative;
-  padding-top: 373px;
   width: 100%;
   height: 800px;
   background: url(../img/slider_1.jpg) no-repeat left center;
@@ -196,28 +199,31 @@ img {
 }
 
 .slider__button {
-  position: relative;
-  display: inline-block;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 22.5px;
   text-decoration: none;
   min-width: 200px;
-  height: 45px;
+  max-width: 212px;
+  min-height: 45px;
   background-color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
   line-height: 13px;
-  letter-spacing: 3.4px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #212121;
   overflow: hidden;
+  fill: #fff;
   width: 212px;
-  padding: 16px 30px 16px 31px;
   margin-bottom: 32px;
   box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35);
 }
 
-.slider__button:hover .slider__icon {
+.slider__button:hover {
   fill: #212121;
   transition: 1s;
 }
@@ -226,10 +232,7 @@ img {
   box-shadow: none;
 }
 
-.slider__icon {
-  fill: #fff;
-  position: absolute;
-  right: 30px;
+.button__icon {
   width: 12px;
   height: 13px;
 }
@@ -262,39 +265,40 @@ img {
 }
 
 .tab {
-  padding: 114px 0 120px 0;
+  padding: 112px 0 120px 0;
 }
 
 .tab__top {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 50px;
 }
 
 .tab__button {
-  position: relative;
+  padding: 15px 30px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding-top: 10px;
+  border-radius: 22.5px;
   text-decoration: none;
   min-width: 200px;
-  height: 45px;
+  max-width: 212px;
+  min-height: 45px;
   background-color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
   line-height: 13px;
-  letter-spacing: 3.4px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #212121;
   overflow: hidden;
-  letter-spacing: 2.6px;
-  border-bottom: 3px solid transparent;
+  fill: #fff;
+  min-width: 180px;
+  padding: 0;
 }
 
-.tab__button:hover .button__icon {
+.tab__button:hover {
   fill: #212121;
   transition: 1s;
 }
@@ -368,16 +372,6 @@ img {
 .filters__link--active {
   color: #212121;
   border-bottom: 3px solid #212121;
-}
-
-.button__icon {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-20%);
-  right: -2px;
-  width: 13px;
-  height: 12px;
-  fill: #fff;
 }
 
 .description__button {
@@ -475,29 +469,40 @@ img {
 }
 
 .promo-product__button {
-  position: relative;
-  display: inline-block;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 22.5px;
-  padding: 14px 30px 16px 31px;
   text-decoration: none;
   min-width: 200px;
-  height: 45px;
+  max-width: 212px;
+  min-height: 45px;
   background-color: #ffffff;
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
   line-height: 13px;
-  letter-spacing: 3.4px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   color: #212121;
   overflow: hidden;
+  fill: #fff;
   box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35);
-  width: 212px;
 }
 
-.promo-product__button:hover .slider__icon {
+.promo-product__button:hover {
   fill: #212121;
   transition: 1s;
+}
+
+.promo-product__button:active {
+  box-shadow: none;
+}
+
+.promo-product__icon {
+  width: 12px;
+  height: 13px;
 }
 
 .trending-products {
@@ -519,13 +524,48 @@ img {
   color: #212121;
 }
 
-.trending-products__content {
+.trending-products__button {
+  margin-top: 6px;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 22.5px;
+  text-decoration: none;
+  min-width: 200px;
+  max-width: 212px;
+  min-height: 45px;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #212121;
+  overflow: hidden;
+  fill: #fff;
+  min-width: 180px;
+  padding: 0;
+}
+
+.trending-products__button:hover {
+  fill: #212121;
+  transition: 1s;
+}
+
+.trending-products__button:active {
+  fill: #6c6c6c;
+  color: #6c6c6c;
+}
+
+.content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.trending-products__block {
+.content__block {
   position: relative;
   width: 370px;
   height: 370px;
@@ -533,12 +573,12 @@ img {
   overflow: hidden;
 }
 
-.trending-products__block:hover .trending-products__description {
+.content__block:hover .content__description {
   left: 0;
   transition: 1s;
 }
 
-.trending-products__description {
+.content__description {
   position: absolute;
   bottom: 0;
   left: -370px;
@@ -551,15 +591,8 @@ img {
   text-align: center;
 }
 
-.trending-products__button {
-  margin-top: 6px;
-}
-
 .hot-deals__slider {
-  position: relative;
   padding-top: 288px;
-  width: 100%;
-  height: 800px;
   background: url(../img/slider_hot-deals_1.jpg) no-repeat left center;
   background-size: cover;
 }
@@ -672,6 +705,38 @@ img {
   color: #6c6c6c;
   overflow: hidden;
   margin-bottom: 32px;
+}
+
+.hover__button {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 22.5px;
+  text-decoration: none;
+  min-width: 200px;
+  max-width: 212px;
+  min-height: 45px;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  line-height: 13px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #212121;
+  overflow: hidden;
+  fill: #fff;
+  box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35);
+}
+
+.hover__button:hover {
+  fill: #212121;
+  transition: 1s;
+}
+
+.hover__button:active {
+  box-shadow: none;
 }
 
 .mobile-app {
@@ -795,10 +860,13 @@ img {
 }
 
 .useful-information__list {
-  margin-top: -1px;
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-content: space-between;
   width: 418px;
+  height: 79px;
   font-size: 14px;
   font-weight: bold;
   font-style: normal;
@@ -1781,11 +1849,11 @@ img {
     font-size: 8px;
   }
   .useful-information {
-    margin-bottom: 25px;
+    margin-bottom: 55px;
   }
   .useful-information__list {
     width: 100%;
-    flex-direction: column;
+    height: 100%;
   }
   .form {
     width: 100%;

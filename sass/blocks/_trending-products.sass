@@ -6,21 +6,35 @@
     margin-bottom: 58px
   &__title
     @include title-secondary
-  &__content
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between
+
+  
+  &__button
+    margin-top: 6px
+    @include button
+    min-width: 180px
+    padding: 0
+    &:hover
+      fill: #212121
+      transition: 1s
+    &:active
+      fill: #6c6c6c
+      color: #6c6c6c
+
+.content
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
   &__block
     position: relative
     width: 370px
     height: 370px
     margin-bottom: 30px
     overflow: hidden
-    &:hover .trending-products__description
+    &:hover .content__description
       left: 0
       transition: 1s
   &__description
-    position: absolute    
+    position: absolute
     bottom: 0
     left: -370px
     padding: 65px 35px 65px 35px
@@ -30,5 +44,3 @@
     opacity: 0.9
     border: 1px solid #9c9c9c
     text-align: center
-  &__button
-    margin-top: 6px
