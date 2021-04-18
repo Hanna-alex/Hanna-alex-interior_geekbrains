@@ -202,7 +202,6 @@
       font-size: 16px
       line-height: 14px
       letter-spacing: 2.4px
-      padding-left: 40px
       padding-top: 15px
       fill: #212121
 
@@ -261,7 +260,7 @@
       font-size: 16px
       line-height: 14px
       letter-spacing: 2.4px
-      padding-left: 40px
+      
     &__text
       width: 40%
 
@@ -312,6 +311,8 @@
     &__title
       font-size: 32px
     &__subtitle
+      font-size: 16px
+    &__button
       font-size: 16px
 
   .mobile-app
@@ -389,13 +390,15 @@
       &:hover
         color: #6c6c6c
 
+.button
+  max-width: 250px
+
 @media screen and ( max-width: 767px )
   .content-container
     max-width: 90%
 
   .slider
-    height: 450px
-
+    height: 500px
     &__subtitle
       font-size: 14px
     &__title
@@ -436,6 +439,7 @@
     &__content
       padding: 50px 20px
       height: 350px
+    &__button
 
   .trending-products
     &__title-block
@@ -545,6 +549,7 @@
       font-size: 16px
     &__wrapper
       flex-wrap: wrap
+      justify-content: center
       margin-bottom: 60px
     &__img
       width: 288px
@@ -554,9 +559,17 @@
       width: 100%
     &__text
       text-align: center
+      max-height: 165px
     &__picture
       margin-right: 0
       margin-bottom: 20px
+
+@media screen and ( max-width: 567px )
+  .hero
+    &__slider
+      background: url(../img/slider_min.jpg) no-repeat center center
+  .slider
+  
 
 @media screen and ( max-width: 480px)
   .promo-product
@@ -570,6 +583,8 @@
   .trending-products
     &__title
       font-size: 28px
+    &__button
+      font-size: 14px
   .content
     &__block
       width: 288px
@@ -580,12 +595,17 @@
     &__description
       width: 268px
 
+  .tab
+    &__button
+      font-size: 14px
   .filters
-    min-height: 46px
+    min-height: 37px
     &__link
-      font-size: 28px
+      font-size: 20px
 
   .exclusive-product
+    &__wrapper
+      justify-content: center
     &__card
       width: 288px
       height: 288px

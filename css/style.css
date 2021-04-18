@@ -152,13 +152,13 @@ img {
 
 .hero__slider {
   padding-top: 373px;
+  background: url(../img/slider_1.jpg) no-repeat left center;
 }
 
 .slider {
   position: relative;
   width: 100%;
   height: 800px;
-  background: url(../img/slider_1.jpg) no-repeat left center;
   background-size: cover;
 }
 
@@ -187,11 +187,11 @@ img {
 
 .slider__text {
   width: 470px;
-  height: 50px;
+  min-height: 50px;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
-  line-height: 1.7em;
+  line-height: 24px;
   letter-spacing: -0.2px;
   color: #6c6c6c;
   overflow: hidden;
@@ -199,9 +199,9 @@ img {
 }
 
 .slider__button {
-  padding: 15px 30px;
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 22.5px;
   text-decoration: none;
@@ -218,7 +218,7 @@ img {
   color: #212121;
   overflow: hidden;
   fill: #fff;
-  width: 212px;
+  max-width: 212px;
   margin-bottom: 32px;
   box-shadow: 0px 2px 4.9px 0.2px rgba(33, 33, 33, 0.35);
 }
@@ -235,6 +235,7 @@ img {
 .button__icon {
   width: 12px;
   height: 13px;
+  margin-left: 10px;
 }
 
 .pagination {
@@ -275,9 +276,9 @@ img {
 }
 
 .tab__button {
-  padding: 15px 30px;
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 22.5px;
   text-decoration: none;
@@ -469,9 +470,9 @@ img {
 }
 
 .promo-product__button {
-  padding: 15px 30px;
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 22.5px;
   text-decoration: none;
@@ -503,6 +504,7 @@ img {
 .promo-product__icon {
   width: 12px;
   height: 13px;
+  margin-left: 10px;
 }
 
 .trending-products {
@@ -526,9 +528,9 @@ img {
 
 .trending-products__button {
   margin-top: 6px;
-  padding: 15px 30px;
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 22.5px;
   text-decoration: none;
@@ -708,9 +710,9 @@ img {
 }
 
 .hover__button {
-  padding: 15px 30px;
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 22.5px;
   text-decoration: none;
@@ -1187,9 +1189,9 @@ img {
 }
 
 .product-deails__button {
-  padding: 15px 30px;
+  padding: 15px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border-radius: 22.5px;
   text-decoration: none;
@@ -1227,6 +1229,7 @@ img {
 .product-deails__icon {
   width: 12px;
   height: 13px;
+  margin-left: 10px;
   margin-left: 27px;
 }
 
@@ -1516,7 +1519,6 @@ img {
     font-size: 16px;
     line-height: 14px;
     letter-spacing: 2.4px;
-    padding-left: 40px;
     padding-top: 15px;
     fill: #212121;
   }
@@ -1587,7 +1589,6 @@ img {
     font-size: 16px;
     line-height: 14px;
     letter-spacing: 2.4px;
-    padding-left: 40px;
   }
   .promo-product__text {
     width: 40%;
@@ -1647,6 +1648,9 @@ img {
     font-size: 32px;
   }
   .hover__subtitle {
+    font-size: 16px;
+  }
+  .hover__button {
     font-size: 16px;
   }
   .mobile-app__title {
@@ -1731,12 +1735,16 @@ img {
   }
 }
 
+.button {
+  max-width: 250px;
+}
+
 @media screen and (max-width: 767px) {
   .content-container {
     max-width: 90%;
   }
   .slider {
-    height: 450px;
+    height: 500px;
   }
   .slider__subtitle {
     font-size: 14px;
@@ -1916,6 +1924,7 @@ img {
   }
   .product-deails__wrapper {
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 60px;
   }
   .product-deails__img {
@@ -1928,10 +1937,17 @@ img {
   }
   .product-deails__text {
     text-align: center;
+    max-height: 165px;
   }
   .product-deails__picture {
     margin-right: 0;
     margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .hero__slider {
+    background: url(../img/slider_min.jpg) no-repeat center center;
   }
 }
 
@@ -1948,6 +1964,9 @@ img {
   .trending-products__title {
     font-size: 28px;
   }
+  .trending-products__button {
+    font-size: 14px;
+  }
   .content__block {
     width: 288px;
     height: 410px;
@@ -1959,11 +1978,17 @@ img {
   .content__description {
     width: 268px;
   }
+  .tab__button {
+    font-size: 14px;
+  }
   .filters {
-    min-height: 46px;
+    min-height: 37px;
   }
   .filters__link {
-    font-size: 28px;
+    font-size: 20px;
+  }
+  .exclusive-product__wrapper {
+    justify-content: center;
   }
   .exclusive-product__card {
     width: 288px;
