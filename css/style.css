@@ -1384,6 +1384,7 @@ img {
     padding: 100px 0;
     height: 450px;
     background-size: cover;
+    background-position: center center;
   }
   .contact-page__card-info {
     width: 300px;
@@ -1948,6 +1949,12 @@ img {
 @media screen and (max-width: 567px) {
   .hero__slider {
     background: url(../img/slider_min.jpg) no-repeat center center;
+  }
+  .hot-deals__slider {
+    background: url(../img/slider_hot-deals_1_min.jpg) no-repeat center center;
+  }
+  .mobile-app {
+    background-position: -275px center;
   }
 }
 
